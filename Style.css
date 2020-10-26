@@ -1,0 +1,80 @@
+/* police d'ecriture */ 
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('Polices/webfontkit-20201015-111035/raleway-variablefont_wght-webfont.eot');
+    src: url('Polices/webfontkit-20201015-111035/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Polices/webfontkit-20201015-111035/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('Polices/webfontkit-20201015-111035/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('Polices/webfontkit-20201015-111035/raleway-variablefont_wght-webfont.ttf') format('truetype'),
+         url('Polices/webfontkit-20201015-111035/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /* éléments principaux */ 
+
+body
+{
+    font-family: 'ralewaythin', 'arial', sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 95%;
+    margin: auto;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+/* header */ 
+
+#logo
+{
+    width: 110px;
+    max-height: 40px;
+}
+
+header
+{
+    display: flex;
+}
+
+#h1
+{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header p
+{
+    font-size: 1.2em;
+}
+
+nav ul
+{
+    display: flex; 
+    justify-content:flex-end;
+}
+
+nav a
+{
+    color: #0065FC;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+nav a:hover
+{
+    text-decoration: overline;
+}
+
+nav a:checked
+{
+    border-color: darkblue;
+}
