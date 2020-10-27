@@ -13,7 +13,7 @@
 
 }
 
- /* éléments principaux */ 
+ /* _______________éléments principaux________________ */ 
 
 body
 {
@@ -21,7 +21,7 @@ body
     color: #181818;
 }
 
-#bloc_page
+#bloc_page  /* ne prend pas toute la largeur de l'écran */ 
 {
     width: 95%;
     margin: auto;
@@ -32,7 +32,7 @@ ul
     list-style-type: none;
 }
 
-/* header */ 
+/* _________________header_________________ */ 
 
 #logo
 {
@@ -47,7 +47,7 @@ header
 
 #h1
 {
-    font-weight: bold;
+    font-weight: bold; /* ne s'affiche pas en gras? */ 
     font-size: 2em;
 }
 
@@ -59,7 +59,7 @@ header p
 nav ul
 {
     display: flex; 
-    justify-content:flex-end;
+    justify-content:flex-end; /* ne s'affiche pas en haut à droite (bloc_page? */ 
 }
 
 nav a
@@ -71,10 +71,32 @@ nav a
 
 nav a:hover
 {
-    text-decoration: overline;
+    text-decoration: overline; /* ne marche pas */ 
 }
 
 nav a:checked
 {
-    border-color: darkblue;
+    border-color: darkblue; /*ne marche pas*/
+}
+
+/* _______________fonction recherche________________ */ 
+
+::placeholder
+{
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+    font-family: 'ralewaythin';
+}
+
+#style_input 
+{
+    height: 40px;
+    width: 240px;
+}
+
+#fas fa-map-marker-alt
+{
+    border-style: solid;
+    background-color: #F2F2F2;
 }
