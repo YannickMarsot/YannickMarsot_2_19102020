@@ -201,3 +201,153 @@ nav a:checked
     border-bottom-left-radius: 34px;
     margin-right: 30px;
 }
+
+.fas.fa-info
+{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    color: #0065FC;
+    line-height: 35px;
+    border-style: solid;
+    border-color: #DEEBFF;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/*________________Hebergement___________*/
+
+#hebergement
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+bloc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 25%;
+    background-color: #DEEBFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+aside
+{
+    width: 30%;
+    height: 25%;
+    background-color: #DEEBFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+bloc #ligne_1
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+bloc #ligne_2
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#location1
+{
+    height: auto;
+    width: 30%;
+    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location2
+{
+    height: auto;
+    width: 30%;
+    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location3
+{
+    height: auto;
+    width: 30%;
+    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location4
+{
+    height: auto;
+    width: 30%;
+    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location5
+{
+    height: auto;
+    width: 30%;
+    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location6
+{
+    height: auto;
+    width: 30%;
+    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location7
+{
+    height: auto;
+    width: 90%;
+    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location8
+{
+    height: auto;
+    width: 90%;
+    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location9
+{
+    height: auto;
+    width: 90%;
+    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
+    position: relative;
+}
+
+#location1 description,
+#location2 description,
+#location3 description,
+#location4 description,
+#location5 description,
+#location6 description,
+#location7 description,
+#location8 description,
+#location9 description,
+{
+    position: absolute;
+}
