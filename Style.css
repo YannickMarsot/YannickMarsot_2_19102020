@@ -220,6 +220,22 @@ nav a:checked
 
 /*________________Hebergement___________*/
 
+#hebergement a
+{
+    text-decoration: none;
+    color: black;
+}
+
+bloc h2
+{
+    margin-left: 45px;
+}
+
+.fas.fa-star
+{
+    color: #0065FC;
+}
+
 #hebergement
 {
     display: flex;
@@ -231,33 +247,35 @@ bloc
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 60%;
-    height: 25%;
+    width: 66%;
+    height: auto;
     background-color: #DEEBFF;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 aside
 {
     width: 30%;
-    height: 25%;
+    height: auto;
     background-color: #DEEBFF;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 25px;
 }
 
 bloc #ligne_1
 {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 bloc #ligne_2
@@ -266,88 +284,55 @@ bloc #ligne_2
     justify-content: space-around;
 }
 
-
-#location1
+.location
 {
     height: auto;
-    width: 30%;
-    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
-    position: relative;
+    width: 25%;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
 }
 
-#location2
+.location img
 {
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.location2
+{
+    display: flex;
     height: auto;
-    width: 30%;
-    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
-    position: relative;
+    width: 85%;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
-#location3
+.location2 img
 {
-    height: auto;
-    width: 30%;
-    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
-    position: relative;
+    background-size: cover;
+    width: 140px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-#location4
+.location2 .description
 {
-    height: auto;
-    width: 30%;
-    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
-    position: relative;
-}
-
-#location5
-{
-    height: auto;
-    width: 30%;
-    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
-    position: relative;
-}
-
-#location6
-{
-    height: auto;
-    width: 30%;
-    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
-    position: relative;
-}
-
-#location7
-{
-    height: auto;
-    width: 90%;
-    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
-    position: relative;
-}
-
-#location8
-{
-    height: auto;
-    width: 90%;
-    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
-    position: relative;
-}
-
-#location9
-{
-    height: auto;
-    width: 90%;
-    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
-    position: relative;
-}
-
-#location1 description,
-#location2 description,
-#location3 description,
-#location4 description,
-#location5 description,
-#location6 description,
-#location7 description,
-#location8 description,
-#location9 description,
-{
-    position: absolute;
+    padding-left: 20px;
 }
