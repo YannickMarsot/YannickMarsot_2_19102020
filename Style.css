@@ -2,19 +2,15 @@
 
 body
 {
+    display: flex;
+    justify-content: center;
     font-family: 'Raleway', 'arial', sans-serif;
     color: #181818;
 }
 
-#bloc_page 
+.width95 
 {
     width: 95%;
-}
-
-body 
-{
-    display: flex;
-    justify-content: center;
 }
 
 ul 
@@ -141,6 +137,7 @@ nav a:checked
 #filtres ul 
 {
     display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
     font-size: 1.3em;
     margin-top: 75px;
@@ -265,36 +262,42 @@ bloc
     border-bottom-left-radius: 15px;
 }
 
-aside 
+aside
 {
     width: 30%;
     background-color: #DEEBFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*justify-content: space-around;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    /*padding-left: 25px;*/
 }
 
 aside h2
 {
-    margin-left: -9,5em;
+    margin-left: 1.5em;
 }
+
 
 .fas.fa-chart-line
 {
-    margin-left: 5em;
+    margin-left: 9em;
 }
+
+#Aside 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 bloc #ligne_1 
 {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
 }
 
 bloc #ligne_2 
@@ -331,8 +334,6 @@ bloc #ligne_2
     max-width: 100%;
     width: 100%;
     height: 100%;
-    /*width: 290px;
-    height: 150px;*/
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -352,8 +353,6 @@ bloc #ligne_2
     max-width: 100%;
     width: 100%;
     height: 100%;
-    /*width: 290px;
-    height: 150px;*/
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -372,7 +371,6 @@ bloc #ligne_2
     padding-top: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
-    margin-bottom: 20px;
 }
 
 .conteneur2
@@ -389,8 +387,6 @@ bloc #ligne_2
     max-width: 100%;
     width: 100%;
     height: 100%;
-    /*width: 140px;
-    height: 150px;*/
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -402,10 +398,17 @@ bloc #ligne_2
 
 /*__________Activite___________*/
 
+#activite
+{
+    height: 25%
+}
+
+
 #Activite 
 {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 #Activite h3 
@@ -426,19 +429,19 @@ bloc #ligne_2
 .conteneur3
 {
     width: 100%;
-    height: 100%;
+    height: 88%;
 }
 
 .conteneur4
 {
     width: 100%;
-    height: 53%;
+    height: 100%;
 }
 
 .conteneur5
 {
     width: 100%;
-    height: 30%;
+    height: 70%;
 }
 
 .conteneur6
@@ -447,9 +450,15 @@ bloc #ligne_2
     height: 100%;
 }
 
+#super_conteneur
+{
+    height: 80%;
+    width: 100%;
+}
+
 .petite_location 
 {
-    height: 50%;
+    height: 94%;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -468,7 +477,20 @@ bloc #ligne_2
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 4px 10px 8px #DEEBFF;
+    height: 90%;
+}
+
+.location3_resize 
+{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 4px 10px 8px #DEEBFF;
+    height: 87%;
 }
 
 .conteneur3 img 
@@ -478,8 +500,6 @@ bloc #ligne_2
     max-height: 100%;
     max-width: 100%;
     height: 100%;
-    /*width: 360px;
-    height: 390px;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -492,8 +512,22 @@ bloc #ligne_2
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 4px 10px 8px #DEEBFF;
     margin-bottom: 20px;
+    height: 60%;
+}
+
+.location4_resize 
+{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 4px 10px 8px #DEEBFF;
+    margin-bottom: 20px;
+    height: 30%;
 }
 
 .conteneur4 img 
@@ -502,10 +536,8 @@ bloc #ligne_2
     display: block;
     max-height: 100%;
     max-width: 100%;
-    height: 49%;
-    /*width: 100%;
-    width: 360px;
-    height: 180px;*/
+    height: 100%;
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -516,10 +548,8 @@ bloc #ligne_2
     display: block;
     max-height: 100%;
     max-width: 100%;
-    height: 70%;
+    height: 100%;
     width: 100%;
-    /*width: 360px;
-    height: 180px;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -530,8 +560,6 @@ bloc #ligne_2
     display: block;
     max-height: 100%;
     max-width: 100%;
-    /*width: 360px;
-    height: 180px;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -545,6 +573,7 @@ footer
     display: flex;
     justify-content: space-between;
     background-color: #DEEBFF;
+    margin-top: 10em;
 }
 
 footer a 
