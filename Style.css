@@ -547,19 +547,28 @@ footer ul {
 
     /* _______________éléments principaux________________ */
 
+    html {
+        height: 100%;
+    }
+
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /*justify-content: space-between;*/
         font-family: 'Raleway', 'arial', sans-serif;
         color: #181818;
         padding-right: 10px;
         padding-left: 10px;
+        height: 100%;
     }
-    
-    #bloc_page
-    {
+
+    #bloc_page {
         max-width: 425px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .width95 {
@@ -575,6 +584,8 @@ footer ul {
     header {
         display: flex;
         flex-direction: column;
+        height: 27%;
+        margin-bottom: 20px;
     }
 
     #titre_principal {
@@ -625,10 +636,15 @@ footer ul {
 
     /* _______________fonction recherche________________ */
 
+    #fonction_recherche {
+        height: 27%;
+        margin-bottom: 950px;
+    }
+
     #champ_recherche {
         position: absolute;
         margin-left: -55px;
-        margin-top: -70px;
+        margin-top: 0px;
     }
 
     ::placeholder {
@@ -725,7 +741,7 @@ footer ul {
         height: 60px;
         width: 100px;
         line-height: 60px;
-        margin-right: 40px;
+        margin-right: 71px;
     }
 
     #border1 .fas.fa-money-bill-wave,
@@ -798,32 +814,39 @@ footer ul {
     #hebergement {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         justify-content: space-between;
-        height: 32%;
+        height: 100%;
         width: 100%;
     }
 
     bloc {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        height: 50%;
-        background-color: #DEEBFF;
+        height: 100%;
+        background-color: #F2F2F2;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
+        margin-bottom: 20px;
     }
 
     aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        height: 50%;
-        background-color: #DEEBFF;
+        height: 100%;
+        background-color: #F2F2F2;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
+        margin-bottom: 20px;
     }
 
     aside h2 {
@@ -842,27 +865,30 @@ footer ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /*justify-content: space-around;*/
     }
 
 
     bloc #ligne_1 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-around;
-        height: 30%;
+        height: 100%;
+        width: 80%;
     }
 
     bloc #ligne_2 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-around;
-        height: 30%;
+        height: 100%;
+        width: 80%;
     }
 
     .location {
-        width: 85%;
-        height: 50%;
+        width: 100%;
+        height: 25%;
         background-color: white;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -875,7 +901,7 @@ footer ul {
     }
 
     .conteneur {
-        width: 98%;
+        width: 100%;
         height: 50%;
     }
 
@@ -892,7 +918,7 @@ footer ul {
     }
 
     #ligne_2 .conteneur {
-        width: 98%;
+        width: 100%;
         height: 50%;
     }
 
@@ -910,8 +936,8 @@ footer ul {
 
     .location2 {
         display: flex;
-        width: 85%;
-        height: 16%;
+        width: 80%;
+        height: 47%;
         background-color: white;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -924,8 +950,8 @@ footer ul {
     }
 
     .conteneur2 {
-        width: 40%;
-        height: 100%;
+        width: 32%;
+        height: 104%;
     }
 
     .conteneur2 img {
@@ -946,9 +972,12 @@ footer ul {
     /*__________Activite___________*/
 
     #activite {
-        height: 25%;
+        height: 50%;
         width: 100%;
-        
+        margin-top: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -956,6 +985,7 @@ footer ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         height: 100%;
         width: 100%;
     }
@@ -966,8 +996,8 @@ footer ul {
     }
 
     .grande_location {
-        width: 20%;
-        height: 50%;
+        width: 100%;
+        height: 30%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -976,34 +1006,35 @@ footer ul {
 
     .conteneur3 {
         width: 100%;
-        height: 88%;
+        height: 30%;
     }
 
     .conteneur4 {
         width: 100%;
-        height: 100%;
+        height: 30%;
     }
 
     .conteneur5 {
         width: 100%;
-        height: 70%;
+        height: 30%;
     }
 
     .conteneur6 {
         width: 100%;
-        height: 100%;
+        height: 30%;
     }
 
     #super_conteneur {
-        height: 80%;
-        width: 100%;
+        height: 100%;
+        width: 30%;
     }
 
     .petite_location {
-        height: 94%;
-        width: 85%;
+        height: 30%;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -1019,7 +1050,7 @@ footer ul {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #DEEBFF;
-        height: 90%;
+        height: 30%;
         width: 100%;
         margin-bottom: 20px;
     }
@@ -1032,7 +1063,7 @@ footer ul {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #DEEBFF;
-        height: 91%;
+        height: 30%;
         width: 100%;
         margin-bottom: 20px;
     }
@@ -1056,7 +1087,7 @@ footer ul {
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #DEEBFF;
         margin-bottom: 20px;
-        height: 60%;
+        height: 30%;
         width: 100%;
     }
 
