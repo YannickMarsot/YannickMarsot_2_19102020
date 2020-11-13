@@ -3,6 +3,9 @@
 body {
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
     font-family: 'Raleway', 'arial', sans-serif;
     color: #181818;
     max-width: 1440px;
@@ -23,7 +26,8 @@ ul {
     max-height: 40px;
 }
 
-.display_phone {
+.display_phone1,
+.display_phone2 {
     visibility: hidden;
 }
 
@@ -72,6 +76,11 @@ nav a:checked {
 
 /* _______________fonction recherche________________ */
 
+#champ_recherche {
+    position: absolute;
+    margin-left: -54px;
+    margin-top: -78px;
+}
 
 ::placeholder {
     font-weight: bold;
@@ -533,7 +542,9 @@ footer a {
     body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 425px;
         font-family: 'Raleway', 'arial', sans-serif;
         color: #181818;
         max-width: 425px;
@@ -574,7 +585,7 @@ footer a {
         color: #0065FC;
         border-bottom: solid;
     }
-    
+
     .display_phone2 {
         visibility: visible;
         font-size: 1.5em;
