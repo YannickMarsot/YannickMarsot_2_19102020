@@ -226,7 +226,7 @@ nav a:checked {
     color: black;
 }
 
-bloc h2 {
+#bloc h2 {
     margin-left: 45px;
 }
 
@@ -244,7 +244,7 @@ bloc h2 {
     height: 32%;
 }
 
-bloc {
+#bloc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -285,12 +285,12 @@ aside h2 {
 }
 
 
-bloc #ligne_1 {
+#bloc #ligne_1 {
     display: flex;
     justify-content: space-around;
 }
 
-bloc #ligne_2 {
+#bloc #ligne_2 {
     display: flex;
     justify-content: space-around;
     height: 30%;
@@ -588,6 +588,7 @@ footer ul {
     header {
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 27%;
         margin-bottom: 20px;
     }
@@ -823,9 +824,11 @@ footer ul {
         height: 100%;
         width: 100%;
         margin-top: 1824px;
+        padding-left: 20px;
+        margin-left: 44px;
     }
 
-    bloc {
+    #bloc {
         display: flex;
         flex-direction: column;
         /*align-items: center;*/
@@ -837,7 +840,7 @@ footer ul {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         margin-bottom: 20px;
-        padding-left: 40px;
+        padding-left: 91px;
     }
 
     aside {
@@ -874,7 +877,7 @@ footer ul {
     }
 
 
-    bloc #ligne_1 {
+    #bloc #ligne_1 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -883,7 +886,7 @@ footer ul {
         width: 80%;
     }
 
-    bloc #ligne_2 {
+    #bloc #ligne_2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -984,7 +987,7 @@ footer ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 40px;
+        padding-left: 51px;
     }
 
 
@@ -1004,46 +1007,47 @@ footer ul {
 
     .grande_location {
         width: 100%;
-        height: 57%;
+        height: 101%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         margin-bottom: 20px;
         margin-top: 23px;
+        margin-left: 94px;
     }
 
     .conteneur3 {
         width: 100%;
-        height: 100%;
+        height: 70%;
     }
 
     .conteneur4 {
-        width: 100%;
-        height: 100%;
+        width: 125%;
+        height: 70%;
     }
 
     .conteneur5 {
         width: 100%;
-        height: 100%;
+        height: 70%;
     }
 
     .conteneur6 {
         width: 100%;
-        height: 100%;
+        height: 81%;
     }
 
     #super_conteneur {
         height: 100%;
-        width: 81%;
+        width: 80%;
     }
 
     #no_margin_2 {
-        margin-top: 0px;
+        margin-top: -126px;
     }
 
     .petite_location {
-        height: 57%;
+        height: 101%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1053,7 +1057,7 @@ footer ul {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
-        margin-top: 289px;
+        margin-top: 61px;
     }
 
     .location3 {
@@ -1064,8 +1068,8 @@ footer ul {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #F2F2F2;
-        height: 90%;
-        width: 100%;
+        height: 68%;
+        width: 77%;
         margin-bottom: 20px;
     }
 
@@ -1077,9 +1081,9 @@ footer ul {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #F2F2F2;
-        height: 90%;
-        width: 100%;
-        margin-top: 273px;
+        height: 68%;
+        width: 77%;
+        margin-top: 204px;
     }
 
     .conteneur3 img {
@@ -1101,8 +1105,8 @@ footer ul {
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #F2F2F2;
         margin-bottom: 50px;
-        height: 90%;
-        width: 100%;
+        height: 68%;
+        width: 77%;
     }
 
     .location4_resize {
@@ -1114,9 +1118,9 @@ footer ul {
         border-bottom-left-radius: 15px;
         box-shadow: 4px 10px 8px #F2F2F2;
         margin-bottom: 20px;
-        height: 55%;
-        width: 81%;
-        margin-left: -71px;
+        height: 68%;
+        width: 77%;
+        /*margin-left: -71px;*/
     }
 
 
@@ -1157,23 +1161,29 @@ footer ul {
     footer {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: space-around;
         background-color: #F2F2F2;
-        margin-top: 85em;
+        margin-top: 104em;
+        width: 138%;
     }
 
     footer a {
         text-decoration: none;
         color: black;
     }
+    
+    footer ul {
+    margin-left: 60px;
+}
 }
 
 
 /*_____________Affichage_Tablette___________________*/
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:768px) {
 
-    /* _______________éléments principaux________________ */
+    /* _______________éléments principaux________________*/ 
 
     body {
         display: flex;
@@ -1194,7 +1204,7 @@ footer ul {
         list-style-type: none;
     }
 
-    /* _________________header_________________ */
+    /* _________________header_________________*/ 
 
     #logo {
         width: 110px;
@@ -1259,7 +1269,7 @@ footer ul {
 
 
 
-    /* _______________fonction recherche________________ */
+    /* _______________fonction recherche________________*/ 
 
     #champ_recherche {
         position: absolute;
@@ -1403,7 +1413,7 @@ footer ul {
         color: black;
     }
 
-    bloc h2 {
+    #bloc h2 {
         margin-left: 45px;
     }
 
@@ -1422,7 +1432,7 @@ footer ul {
         height: 60%;
     }
 
-    bloc {
+    #bloc {
         display: flex;
         flex-direction: column;
         /*justify-content: space-between;*/
@@ -1464,13 +1474,13 @@ footer ul {
     }
 
 
-    bloc #ligne_1 {
+    #bloc #ligne_1 {
         display: flex;
         justify-content: space-around;
         height: 35%;
     }
 
-    bloc #ligne_2 {
+    #bloc #ligne_2 {
         display: flex;
         justify-content: space-around;
         height: 33%;
