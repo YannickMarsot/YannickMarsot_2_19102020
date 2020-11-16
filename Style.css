@@ -378,6 +378,12 @@ aside h2 {
 }
 
 /*__________Activite___________*/
+#activite a
+{
+    text-decoration: none;
+    color: black;
+}
+
 
 #activite {
     height: 25%
@@ -989,6 +995,12 @@ footer ul {
         align-items: center;
         padding-left: 51px;
     }
+    
+    #activite a
+{
+    text-decoration: none;
+    color: black;
+}
 
 
     #Activite {
@@ -1572,6 +1584,12 @@ footer ul {
     #activite {
         height: 19%
     }
+    
+    #activite a
+{
+    text-decoration: none;
+    color: black;
+}
 
 
     #Activite {
