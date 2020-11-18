@@ -1,7 +1,6 @@
 /* _______________éléments principaux________________ */
 
-html
-{
+html {
     height: 100%;
 }
 
@@ -78,9 +77,8 @@ nav a {
     color: black;
 }
 
-#border_top
-{
-     border-top: solid;
+#border_top {
+    border-top: solid;
     border-top-color: #0065FC;
     width: auto;
     height: 60px;
@@ -565,7 +563,7 @@ footer {
     position: absolute;
     /*bottom: opx;*/
     width: 100%;
-    
+
 }
 
 footer a {
@@ -585,6 +583,7 @@ footer ul {
 
     html {
         height: 100%;
+        width: 100%;
     }
 
     body {
@@ -597,10 +596,12 @@ footer ul {
         padding-right: 10px;
         padding-left: 10px;
         height: 100%;
+        width: 100%;
     }
 
     #bloc_page {
-        max-width: 425px;
+        max-width: 320px;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -608,12 +609,10 @@ footer ul {
     }
 
     .width95 {
-        width: 95%;
+        width: 90%;
+        height: 100%;
     }
 
-    ul {
-        list-style-type: none;
-    }
 
     /* _________________header_________________ */
 
@@ -674,42 +673,11 @@ footer ul {
     /* _______________fonction recherche________________ */
 
     #fonction_recherche {
-        height: 27%;
-        margin-bottom: 950px;
+        height: 100%;
+        width: 100%;
+        /*margin-bottom: 950px;*/
     }
 
-    #champ_recherche {
-        position: absolute;
-        margin-left: -55px;
-        margin-top: 0px;
-    }
-
-    ::placeholder {
-        font-weight: bold;
-        color: black;
-        font-size: 1.5em;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    #style_input {
-        height: 60px;
-        width: 240px;
-        position: absolute;
-        left: 115px;
-    }
-
-    .fas.fa-map-marker-alt {
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        line-height: 60px;
-        border-style: hidden;
-        background-color: #DEEBFF;
-        border-bottom-left-radius: 8px;
-        border-top-left-radius: 8px;
-        position: absolute;
-        left: 55px;
-    }
 
     #bouton_loupe {
         visibility: visible;
@@ -751,28 +719,7 @@ footer ul {
         left: 355px;
     }
 
-    #filtres ul {
-        display: flex;
-        flex-wrap: wrap;
-        font-weight: bold;
-        font-size: 1.3em;
-        margin-top: 75px;
-        padding-left: 0px;
-    }
 
-    #filtres a:hover {
-        color: #0065FC;
-    }
-
-
-    #border1 a,
-    #border2 a,
-    #border3 a,
-    #border4 a {
-        text-decoration: none;
-        color: black;
-        margin-right: 10px;
-    }
 
     #no_border {
         height: 60px;
@@ -781,22 +728,6 @@ footer ul {
         margin-right: 71px;
     }
 
-    #border1 .fas.fa-money-bill-wave,
-    #border2 .fas.fa-child,
-    #border3 .fas.fa-heart,
-    #border4 .fas.fa-dog {
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        color: #0065FC;
-        line-height: 60px;
-        border-bottom-style: hidden;
-        background-color: #DEEBFF;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-        border-bottom-left-radius: 30px;
-    }
 
     #border1,
     #border2,
@@ -815,55 +746,25 @@ footer ul {
         margin-bottom: 10px;
     }
 
-    .fas.fa-info {
-        height: 35px;
-        width: 35px;
-        text-align: center;
-        color: #0065FC;
-        line-height: 35px;
-        border-style: solid;
-        border-color: #DEEBFF;
-        border-bottom-left-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
     /*________________Hebergement___________*/
 
-    #hebergement a {
-        text-decoration: none;
-        color: black;
-    }
-
-    bloc h2 {
-        margin-left: 45px;
-    }
-
-    .fas.fa-star {
-        color: #0065FC;
-    }
-
-    .fas.fa-star.grey {
-        color: #DEEBFF;
-    }
 
     #hebergement {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         /*justify-content: space-between;*/
-        height: 100%;
+        height: 136%;
         width: 100%;
-        margin-top: 1824px;
-        padding-left: 20px;
-        margin-left: 44px;
+        margin-top: 2226px;
+        /*padding-left: 20px;*/
+        margin-left: 99px;
     }
 
     #bloc {
         display: flex;
         flex-direction: column;
-        /*align-items: center;*/
+        align-items: center;
         width: 100%;
         height: 306%;
         background-color: #F2F2F2;
@@ -890,23 +791,11 @@ footer ul {
         margin-bottom: 20px;
     }
 
-    aside h2 {
-        margin-left: 1.5em;
-        margin-bottom: 60px;
-    }
-
 
     .fas.fa-chart-line {
         margin-left: 2em;
     }
 
-    #Aside {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
 
     #bloc #ligne_1 {
@@ -946,33 +835,9 @@ footer ul {
         height: 60%;
     }
 
-    .conteneur img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
     #ligne_2 .conteneur {
         width: 100%;
         height: 60%;
-    }
-
-    #ligne_2 .conteneur img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
     }
 
     .location2 {
@@ -995,20 +860,6 @@ footer ul {
         height: 104%;
     }
 
-    .conteneur2 img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-
-    .location2 .description {
-        padding-left: 20px;
-    }
 
     /*__________Activite___________*/
 
@@ -1022,11 +873,6 @@ footer ul {
         padding-left: 51px;
     }
 
-    #activite a {
-        text-decoration: none;
-        color: black;
-    }
-
 
     #Activite {
         display: flex;
@@ -1035,11 +881,6 @@ footer ul {
         align-items: center;
         height: 100%;
         width: 100%;
-    }
-
-    #Activite h3 {
-        font-weight: bold;
-        margin-left: 15px;
     }
 
     .grande_location {
@@ -1123,15 +964,6 @@ footer ul {
         margin-top: 204px;
     }
 
-    .conteneur3 img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        height: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
 
     .location4 {
         display: flex;
@@ -1161,38 +993,6 @@ footer ul {
     }
 
 
-    .conteneur4 img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        height: 100%;
-        width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    .conteneur5 img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        height: 100%;
-        width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    .conteneur6 img {
-        object-fit: cover;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-
     /*____________Footer__________*/
 
     footer {
@@ -1205,10 +1005,6 @@ footer ul {
         width: 138%;
     }
 
-    footer a {
-        text-decoration: none;
-        color: black;
-    }
 
     footer ul {
         margin-left: 60px;
