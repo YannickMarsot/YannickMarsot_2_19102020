@@ -512,8 +512,7 @@ footer a {
 
 #a_propos,
 #nos_hebergements,
-#assistance
-{
+#assistance {
     flex: 1;
 }
 
@@ -533,11 +532,10 @@ footer a {
 
     /*_____________header_____________*/
 
-    #logo
-    {
+    #logo {
         margin-right: -168px;
     }
-    
+
     #no_margin {
         font-weight: bold;
     }
@@ -549,9 +547,8 @@ footer a {
     #phone_flex {
         display: flex;
     }
-    
-    #phone_flex a
-    {
+
+    #phone_flex a {
         text-decoration: none;
     }
 
@@ -579,17 +576,18 @@ footer a {
         visibility: hidden;
     }
 
-    #style_input
-    {
+    #style_input {
         height: 60px;
         width: 180px;
     }
-    
-    #border1, #border2, #border3, #border4
-    {
+
+    #border1,
+    #border2,
+    #border3,
+    #border4 {
         margin-bottom: 10px;
     }
-    
+
     #bouton_loupe {
         visibility: visible;
         height: 60px;
@@ -610,140 +608,120 @@ footer a {
         position: absolute;
         left: 291px;
     }
-    
+
     /*____________________hébergement______________*/
-    
-    main
-    {
+
+    main {
         display: flex;
         flex-direction: column;
     }
-    
-    
-    #hebergement
-    {
+
+
+    #hebergement {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    
-    .fas.fa-chart-line
-    {
+
+    .fas.fa-chart-line {
         margin-left: 10px;
     }
-    
-    aside
-    {
+
+    aside {
         margin-bottom: 20px;
         width: 100%;
     }
-    
-    #bloc
-    {
+
+    #bloc {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    
-    #bloc h2
-    {
+
+    #bloc h2 {
         margin-left: 0px;
     }
-    
+
     #ligne_1,
-    #ligne_2
-    {
+    #ligne_2 {
         flex-direction: column;
         align-items: center;
         margin-top: 16px;
     }
-    
-    .location
-    {
+
+    .location {
         width: 90%;
         margin-bottom: 79px;
     }
-    
-    .location2
-    {
+
+    .location2 {
         width: 90%;
         margin-bottom: 20px;
     }
-    
-    .conteneur
-    {
+
+    .conteneur {
         width: 100%;
         height: 130px;
     }
-    
-    .conteneur2
-    {
+
+    .conteneur2 {
         height: 141px;
         width: 32%;
     }
-    
-    
-    .location2 .description
-    {
+
+
+    .location2 .description {
         overflow: auto;
     }
-    
+
     /*__________________________activite_______________________*/
-    
-   
-    
-    #Activite
-    {
+
+
+
+    #Activite {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-  
-    .grande_location
-    {
+
+
+    .grande_location {
         width: 100%;
         margin-bottom: 20px;
     }
-    
-    .petite_location
-    {
-       width: 100%;
-    }
-    
 
-    
-    .conteneur3
-    {
+    .petite_location {
+        width: 100%;
+    }
+
+
+
+    .conteneur3 {
         height: 200px;
         width: 100%;
     }
-    
-    .conteneur4
-    {
+
+    .conteneur4 {
         height: 200px;
         width: 100%;
     }
-    
-    .conteneur5
-    {
+
+    .conteneur5 {
         height: 200px;
         width: 100%;
     }
-    
-    .conteneur6
-    {
+
+    .conteneur6 {
         height: 200px;
         width: 100%;
     }
-    
-    #img6 img
-    {
+
+    #img6 img {
         width: 120%;
     }
-    
 
-    
+
+
     /*___________________footer_______________________*/
 
     footer {
@@ -753,7 +731,66 @@ footer a {
 
 }
 
- /*_____________Affichage_Tablette___________________*/
+/*_____________Affichage_Tablette___________________*/
 
-    @media screen and (min-width:426px) and (max-width:921px) 
+@media screen and (min-width:426px) and (max-width:921px) {
+
+    #border1,
+    #border2,
+    border3,
+    border4 {
+        margin-bottom: 10px;
+    }
+
+    #hebergement {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        width: 100%;
+    }
     
+    #Aside
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .location2
+    {
+        width: 25%;
+    }
+    
+    .conteneur2
+    {
+        width: 68%;
+        height: 200px;
+    }
+
+    #bloc {
+        width: 100%;
+    }
+    
+    .conteneur3
+    {
+        width: 100%;
+        height: 380px;
+    }
+    
+    .conteneur4
+    {
+        width: 100%;
+        height: 156px;
+    }
+    
+    .conteneur6
+    {
+        width: 100%;
+        height: 130px;
+    }
+    
+    
+    
+
+
+}
