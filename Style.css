@@ -1,31 +1,21 @@
 /* _______________éléments principaux________________ */
 
-html {
-    height: 100%;
-}
-
 body {
     display: flex;
     justify-content: center;
     font-family: 'Raleway', 'arial', sans-serif;
     color: #181818;
-    height: 100%;
 }
 
 #bloc_page {
     max-width: 1440px;
     position: relative;
-    height: 100%;
-    min-height: 100%;
 }
 
-main
-{
-    height: 100%;
-}
 
 .width95 {
-    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul {
@@ -93,21 +83,6 @@ nav a {
 #no_margin {
     margin: 0px;
 }
-
-/*nav a:hover {
-    border-top: solid;
-    border-top-color: #0065FC;
-    width: auto;
-    height: 60px;
-    padding-top: 20px;
-}*/
-
-nav a:checked {
-    color: black;
-    /* ne marche pas */
-}
-
-
 
 /* _______________fonction recherche________________ */
 
@@ -267,14 +242,13 @@ nav a:checked {
 #hebergement {
     display: flex;
     justify-content: space-between;
-    height: 93%;
 }
 
 #bloc {
+    width: 66%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 66%;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -303,11 +277,9 @@ aside h2 {
 
 #Aside {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: space-around;*/
 }
 
 
@@ -319,7 +291,6 @@ aside h2 {
 #ligne_2 {
     display: flex;
     justify-content: space-around;
-    height: 30%;
 }
 
 .location {
@@ -336,7 +307,7 @@ aside h2 {
 
 .conteneur {
     width: 98%;
-    height: 50%;
+    height: 150px;
 }
 
 .conteneur img {
@@ -351,27 +322,9 @@ aside h2 {
     border-top-right-radius: 15px;
 }
 
-#ligne_2 .conteneur {
-    width: 98%;
-    height: 50%;
-}
-
-#ligne_2 .conteneur img {
-    object-fit: cover;
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
 .location2 {
     display: flex;
     width: 85%;
-    height: 16%;
     background-color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -385,7 +338,7 @@ aside h2 {
 
 .conteneur2 {
     width: 40%;
-    height: 100%;
+    height: 150px;
 }
 
 .conteneur2 img {
@@ -410,15 +363,9 @@ aside h2 {
 }
 
 
-#activite {
-    height: 63%
-}
-
-
 #Activite {
     display: flex;
     justify-content: space-between;
-    height: 100%;
 }
 
 #Activite h3 {
@@ -436,31 +383,26 @@ aside h2 {
 
 .conteneur3 {
     width: 100%;
-    height: 88%;
+    height: 503px;
 }
 
 .conteneur4 {
     width: 100%;
-    height: 100%;
+    height: 298px;
 }
 
 .conteneur5 {
     width: 100%;
-    height: 70%;
+    height: 124px;
 }
 
 .conteneur6 {
     width: 100%;
-    height: 100%;
+    height: 211px;
 }
 
-#super_conteneur {
-    height: 80%;
-    width: 100%;
-}
 
 .petite_location {
-    height: 94%;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -479,7 +421,6 @@ aside h2 {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     box-shadow: 4px 10px 8px #F2F2F2;
-    height: 90%;
 }
 
 .location3_resize {
@@ -490,7 +431,6 @@ aside h2 {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     box-shadow: 4px 10px 8px #F2F2F2;
-    height: 91%;
 }
 
 .conteneur3 img {
@@ -512,7 +452,6 @@ aside h2 {
     border-bottom-left-radius: 15px;
     box-shadow: 4px 10px 8px #F2F2F2;
     margin-bottom: 20px;
-    height: 60%;
 }
 
 .location4_resize {
@@ -524,7 +463,6 @@ aside h2 {
     border-bottom-left-radius: 15px;
     box-shadow: 4px 10px 8px #F2F2F2;
     margin-bottom: 20px;
-    height: 30%;
 }
 
 .conteneur4 img {
@@ -565,10 +503,6 @@ footer {
     display: flex;
     background-color: #F2F2F2;
     margin-top: 5em;
-    /*position: absolute;*/
-    /*bottom: opx;*/
-    width: 100%;
-
 }
 
 footer a {
@@ -576,8 +510,11 @@ footer a {
     color: black;
 }
 
-footer ul {
-    margin-right: 215px;
+#a_propos,
+#nos_hebergements,
+#assistance
+{
+    flex: 1;
 }
 
 /*____________Affichage telephone___________*/
@@ -587,16 +524,21 @@ footer ul {
     /* _______________éléments principaux________________ */
 
     #bloc_page {
-        height: 100%;
         max-width: 320px;
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
+
     }
 
     /*_____________header_____________*/
 
+    #logo
+    {
+        margin-right: -168px;
+    }
+    
     #no_margin {
-        margin-left: -117px;
         font-weight: bold;
     }
 
@@ -630,7 +572,7 @@ footer ul {
     /*___________fonction_recherche__________*/
 
     #champ_recherche {
-        margin-top: 17px;
+        margin-top: 5px;
     }
 
     #bouton_recherche {
@@ -641,6 +583,11 @@ footer ul {
     {
         height: 60px;
         width: 180px;
+    }
+    
+    #border1, #border2, #border3, #border4
+    {
+        margin-bottom: 10px;
     }
     
     #bouton_loupe {
@@ -668,8 +615,6 @@ footer ul {
     
     main
     {
-        height: 622%;
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -682,69 +627,61 @@ footer ul {
         align-items: center;
     }
     
+    .fas.fa-chart-line
+    {
+        margin-left: 10px;
+    }
+    
     aside
     {
-        height: 19%;
-        width: 100%;
         margin-bottom: 20px;
+        width: 100%;
     }
     
     #bloc
     {
-        height: 100%;
-        width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     #bloc h2
     {
-        margin-left: 45px;
-        margin-bottom: -158px;
+        margin-left: 0px;
     }
     
     #ligne_1,
     #ligne_2
     {
-        display: flex;
         flex-direction: column;
-        height: 30%;
-        width: 80%;
+        align-items: center;
         margin-top: 16px;
     }
     
     .location
     {
-        height: 41%;
-        width: 100%;
+        width: 90%;
         margin-bottom: 79px;
     }
     
     .location2
     {
-        height: 17%;
-        width: 80%;
+        width: 90%;
         margin-bottom: 20px;
     }
     
     .conteneur
     {
         width: 100%;
-        height: 60%;
+        height: 130px;
     }
     
     .conteneur2
     {
-        height: 100%;
-        width: 140%;
+        height: 141px;
+        width: 32%;
     }
     
-    .conteneur2 img
-    {
-        height: 100%;
-        width: 70%;
-    }
     
     .location2 .description
     {
@@ -753,656 +690,70 @@ footer ul {
     
     /*__________________________activite_______________________*/
     
-    #activite
-    {
-        height: 12%;
-        width: 100%;
-    }
+   
     
     #Activite
     {
-        height: 100%;
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
+  
     .grande_location
     {
-        height: 101%;
         width: 100%;
+        margin-bottom: 20px;
     }
     
     .petite_location
     {
-        height: 101%;
-        width: 100%;
-        margin-top: -68px;
+       width: 100%;
     }
     
-    .location3
-    {
-        height: 68%;
-        width: 77%;
-    }
-    
-    .location3_resize
-    {
-        height: 68%;
-        width: 77%;
-        margin-top: 154px;
-    }
-    
-    .location4
-    {
-        height: 68%;
-        width: 77%;
-    }
-    
-    .location4_resize
-    {
-        height: 68%;
-        width: 77%;
-    }
+
     
     .conteneur3
     {
-        height: 70%;
+        height: 200px;
         width: 100%;
     }
     
     .conteneur4
     {
-        height: 70%;
-        width: 125%;
+        height: 200px;
+        width: 100%;
     }
     
     .conteneur5
     {
-        height: 70%;
+        height: 200px;
         width: 100%;
     }
     
     .conteneur6
     {
-        height: 81%;
+        height: 200px;
         width: 100%;
     }
     
-    #super_conteneur
+    #img6 img
     {
-        height: 100%;
-        width: 80%;
+        width: 120%;
     }
+    
+
     
     /*___________________footer_______________________*/
 
     footer {
         display: flex;
         flex-direction: column;
-        margin-top: 104em;
     }
 
-    /*_____________Affichage_Tablette___________________*/
+}
 
-    @media screen and (min-width:768px) and (max-width:768px) {
+ /*_____________Affichage_Tablette___________________*/
 
-        /* _______________éléments principaux________________*/
-
-        body {
-            display: flex;
-            justify-content: center;
-            font-family: 'Raleway', 'arial', sans-serif;
-            color: #181818;
-        }
-
-        #bloc_page {
-            max-width: 768px;
-        }
-
-        .width95 {
-            width: 95%;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        /* _________________header_________________*/
-
-        #logo {
-            width: 110px;
-            max-height: 40px;
-        }
-
-        .display_phone1,
-        .display_phone2 {
-            visibility: hidden;
-        }
-
-        header {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #titre_principal {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #h1 {
-            font-weight: bold;
-            font-size: 2em;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        nav {
-            position: absolute;
-            margin-left: 266px;
-        }
-
-        nav ul {
-            display: flex;
-        }
-
-        nav a {
-            color: #0065FC;
-            text-decoration: none;
-            margin-right: 60px;
-        }
-
-        #no_margin {
-            margin: 0px;
-        }
-
-        nav a:hover {
-            border-top: solid;
-            border-top-color: #0065FC;
-            width: auto;
-            height: 60px;
-            padding-top: 20px;
-        }
-
-        nav a:checked {
-            color: black;
-            /* ne marche pas */
-        }
-
-
-
-        /* _______________fonction recherche________________*/
-
-        #champ_recherche {
-            position: absolute;
-            margin-left: -54px;
-            margin-top: -78px;
-        }
-
-        ::placeholder {
-            font-weight: bold;
-            color: black;
-            font-size: 1.5em;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        #style_input {
-            height: 60px;
-            width: 240px;
-            position: absolute;
-            left: 115px;
-        }
-
-        .fas.fa-map-marker-alt {
-            height: 60px;
-            width: 60px;
-            text-align: center;
-            line-height: 60px;
-            border-style: hidden;
-            background-color: #DEEBFF;
-            border-bottom-left-radius: 8px;
-            border-top-left-radius: 8px;
-            position: absolute;
-            left: 55px;
-        }
-
-        #bouton_loupe {
-            visibility: hidden;
-        }
-
-        #bouton_recherche {
-            height: 60px;
-            width: 140px;
-            text-align: center;
-            color: white;
-            text-decoration: none;
-            font-family: 'Raleway', sans-serif;
-            font-weight: bold;
-            font-size: 1.3em;
-            line-height: 15px;
-            border-style: hidden;
-            background-color: #0065FC;
-            border-bottom-right-radius: 8px;
-            border-top-right-radius: 8px;
-            position: absolute;
-            left: 355px;
-        }
-
-        #filtres ul {
-            display: flex;
-            flex-wrap: wrap;
-            font-weight: bold;
-            font-size: 1.3em;
-            margin-top: 75px;
-            padding-left: 0px;
-        }
-
-        #filtres a:hover {
-            color: #0065FC;
-        }
-
-
-        #border1 a,
-        #border2 a,
-        #border3 a,
-        #border4 a {
-            text-decoration: none;
-            color: black;
-            margin-right: 10px;
-        }
-
-        #no_border {
-            height: 60px;
-            width: 100px;
-            line-height: 60px;
-            margin-right: 30px;
-        }
-
-        #border1 .fas.fa-money-bill-wave,
-        #border2 .fas.fa-child,
-        #border3 .fas.fa-heart,
-        #border4 .fas.fa-dog {
-            height: 60px;
-            width: 60px;
-            text-align: center;
-            color: #0065FC;
-            line-height: 60px;
-            border-bottom-style: hidden;
-            background-color: #DEEBFF;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px;
-            border-bottom-left-radius: 30px;
-        }
-
-        #border1,
-        #border2,
-        #border3,
-        #border4 {
-            height: 60px;
-            width: auto;
-            text-align: center;
-            border-style: solid;
-            border-color: #DEEBFF;
-            border-width: 2px;
-            border-top-left-radius: 34px;
-            border-top-right-radius: 34px;
-            border-bottom-right-radius: 34px;
-            border-bottom-left-radius: 34px;
-            margin-right: 30px;
-            margin-bottom: 10px;
-        }
-
-        .fas.fa-info {
-            height: 35px;
-            width: 35px;
-            text-align: center;
-            color: #0065FC;
-            line-height: 35px;
-            border-style: solid;
-            border-color: #DEEBFF;
-            border-bottom-left-radius: 20px;
-            border-top-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-
-        /*________________Hebergement___________*/
-
-        #hebergement a {
-            text-decoration: none;
-            color: black;
-        }
-
-        #bloc h2 {
-            margin-left: 45px;
-        }
-
-        .fas.fa-star {
-            color: #0065FC;
-        }
-
-        .fas.fa-star.grey {
-            color: #DEEBFF;
-        }
-
-        #hebergement {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-between;
-            height: 60%;
-        }
-
-        #bloc {
-            display: flex;
-            flex-direction: column;
-            /*justify-content: space-between;*/
-            width: 100%;
-            height: 47%;
-            background-color: #F2F2F2;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            margin-top: -1239px;
-        }
-
-        aside {
-            width: 100%;
-            height: 51%;
-            background-color: #F2F2F2;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-        }
-
-        aside h2 {
-            margin-left: 1.5em;
-            margin-bottom: 26px;
-        }
-
-
-        .fas.fa-chart-line {
-            margin-left: 16em;
-        }
-
-        #Aside {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            /*justify-content: space-around;*/
-        }
-
-
-        #bloc #ligne_1 {
-            display: flex;
-            justify-content: space-around;
-            height: 35%;
-        }
-
-        #bloc #ligne_2 {
-            display: flex;
-            justify-content: space-around;
-            height: 33%;
-        }
-
-        .location {
-            width: 25%;
-            background-color: white;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            padding-top: 5px;
-            padding-left: 5px;
-            padding-bottom: 10px;
-        }
-
-        .conteneur {
-            width: 98%;
-            height: 44%;
-        }
-
-        .conteneur img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        #ligne_2 .conteneur {
-            width: 98%;
-            height: 50%;
-        }
-
-        #ligne_2 .conteneur img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        .location2 {
-            display: flex;
-            width: 62%;
-            height: 22%;
-            background-color: white;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            padding-top: 5px;
-            padding-left: 5px;
-            padding-bottom: 5px;
-            margin-bottom: 35px;
-        }
-
-        .conteneur2 {
-            width: 40%;
-            height: 100%;
-        }
-
-        .conteneur2 img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-        }
-
-        .location2 .description {
-            padding-left: 20px;
-        }
-
-        /*__________Activite___________*/
-
-        #activite {
-            height: 19%
-        }
-
-        #activite a {
-            text-decoration: none;
-            color: black;
-        }
-
-
-        #Activite {
-            display: flex;
-            justify-content: space-between;
-            height: 100%;
-        }
-
-        #Activite h3 {
-            font-weight: bold;
-            margin-left: 15px;
-        }
-
-        .grande_location {
-            width: 20%;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-        }
-
-        .conteneur3 {
-            width: 100%;
-            height: 78%;
-        }
-
-        .conteneur4 {
-            width: 100%;
-            height: 92%;
-        }
-
-        .conteneur5 {
-            width: 100%;
-            height: 70%;
-        }
-
-        .conteneur6 {
-            width: 100%;
-            height: 100%;
-        }
-
-        #super_conteneur {
-            height: 80%;
-            width: 100%;
-        }
-
-        .petite_location {
-            height: 94%;
-            width: 20%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-        }
-
-        .location3 {
-            display: flex;
-            flex-direction: column;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            box-shadow: 4px 10px 8px #F2F2F2;
-            height: 90%;
-        }
-
-        .location3_resize {
-            display: flex;
-            flex-direction: column;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            box-shadow: 4px 10px 8px #F2F2F2;
-            height: 91%;
-        }
-
-        .conteneur3 img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            height: 100%;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        .location4 {
-            display: flex;
-            flex-direction: column;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            box-shadow: 4px 10px 8px #F2F2F2;
-            margin-bottom: 20px;
-            height: 60%;
-        }
-
-        .location4_resize {
-            display: flex;
-            flex-direction: column;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            box-shadow: 4px 10px 8px #F2F2F2;
-            margin-bottom: 20px;
-            height: 30%;
-        }
-
-        .conteneur4 img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            height: 100%;
-            width: 100%;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        .conteneur5 img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            height: 100%;
-            width: 100%;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        .conteneur6 img {
-            object-fit: cover;
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-
-        /*____________Footer__________*/
-
-        footer {
-            display: flex;
-            flex-direction: column;
-            background-color: #F2F2F2;
-            margin-top: 5em;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: black;
-        }
-
-        footer ul {
-            margin-right: 215px;
-        }
-    }
+    @media screen and (min-width:426px) and (max-width:921px) 
+    
