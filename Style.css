@@ -1,10 +1,18 @@
 /* _______________éléments principaux________________ */
 
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
 body {
     display: flex;
     justify-content: center;
     font-family: 'Raleway', 'arial', sans-serif;
     color: #181818;
+    width: auto;
+    position: relative;
 }
 
 #bloc_page {
@@ -534,7 +542,12 @@ footer a {
     /*_____________header_____________*/
 
     #logo {
-        margin-right: -168px;
+        margin-right: -244px;
+    }
+    
+    .display_web
+    {
+        margin-left: 10px;
     }
 
     #no_margin {
@@ -728,6 +741,7 @@ footer a {
     footer {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
 }
