@@ -9,7 +9,6 @@ body {
 
 #bloc_page {
     max-width: 1440px;
-    position: relative;
 }
 
 
@@ -68,17 +67,19 @@ nav a {
 
 }
 
-#black {
-    color: black;
-}
-
-#border_top {
+nav a:hover
+{
     border-top: solid;
     border-top-color: #0065FC;
     width: auto;
     height: 60px;
     padding-top: 20px;
 }
+
+#black {
+    color: black;
+}
+
 
 #no_margin {
     margin: 0px;
@@ -526,7 +527,7 @@ footer a {
         max-width: 320px;
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
+        align-items: center;
 
     }
 
@@ -789,7 +790,11 @@ footer a {
         height: 130px;
     }
     
-    
+    #ligne_1,
+    #ligne_2
+    {
+        margin-bottom: 10px;
+    }
     
 
 
