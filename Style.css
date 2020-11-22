@@ -614,6 +614,13 @@ footer a {
         height: 60px;
         width: 180px;
     }
+    
+    ::placeholder
+    {
+        font-size: 1.3em;
+    }
+    
+    
 
 
     #bouton_loupe {
