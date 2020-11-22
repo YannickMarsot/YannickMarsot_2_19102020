@@ -1,6 +1,7 @@
 /* _______________éléments principaux________________ */
 
-html, body{
+html,
+body {
     max-width: 100% !important;
     overflow-x: hidden !important;
     min-height: 100%;
@@ -71,15 +72,15 @@ nav ul {
     display: flex;
 }
 
-nav a {
-    color: #0065FC;
+.display_web {
+    color: black;
     text-decoration: none;
     margin-right: 60px;
 
 }
 
-nav a:hover
-{
+.display_web:hover {
+    color: #0065FC;
     border-top: 3px solid #0065FC;
     width: auto;
     height: 60px;
@@ -87,13 +88,11 @@ nav a:hover
 
 }
 
-#black {
-    color: black;
-}
-
-
 #no_margin {
     margin: 0px;
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* _______________fonction recherche________________ */
@@ -537,21 +536,28 @@ footer a {
     /* _______________éléments principaux________________ */
 
     #bloc_page {
-        max-width: 320px;
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
 
+    .width95 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     /*_____________header_____________*/
+
+    #titre_principal {
+        justify-content: space-around;
+    }
 
     #logo {
         margin-right: -244px;
     }
-    
-    .display_web
-    {
+
+    .display_web {
         margin-left: 10px;
     }
 
@@ -574,8 +580,9 @@ footer a {
 
     .display_phone1 {
         visibility: visible;
-        color: #0065FC;
+        color: black;
         border-bottom: solid;
+        border-bottom-color: #F2F2F2;
         width: 50%;
     }
 
@@ -585,6 +592,12 @@ footer a {
         border-bottom: solid;
         border-bottom-color: #F2F2F2;
         width: 50%;
+    }
+
+    .display_phone1,
+    .display_phone2:hover {
+        color: #0065FC;
+        border-bottom-color: #0065FC;
     }
 
     /*___________fonction_recherche__________*/
@@ -602,7 +615,7 @@ footer a {
         width: 180px;
     }
 
- 
+
     #bouton_loupe {
         visibility: visible;
         height: 60px;
@@ -644,13 +657,13 @@ footer a {
 
     aside {
         margin-bottom: 20px;
-        width: 100%;
+        width: 90%;
     }
 
     #bloc {
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
     }
 
     #bloc h2 {
@@ -701,12 +714,12 @@ footer a {
 
 
     .grande_location {
-        width: 100%;
+        width: 80%;
         margin-bottom: 20px;
     }
 
     .petite_location {
-        width: 100%;
+        width: 80%;
     }
 
 
@@ -758,20 +771,17 @@ footer a {
     aside {
         width: 100%;
     }
-    
-    #Aside
-    {
+
+    #Aside {
         flex-direction: row;
         justify-content: space-around;
     }
-    
-    .location2
-    {
+
+    .location2 {
         width: 25%;
     }
-    
-    .conteneur2
-    {
+
+    .conteneur2 {
         width: 68%;
         height: 200px;
     }
@@ -779,31 +789,27 @@ footer a {
     #bloc {
         width: 100%;
     }
-    
-    .conteneur3
-    {
+
+    .conteneur3 {
         width: 100%;
         height: 380px;
     }
-    
-    .conteneur4
-    {
+
+    .conteneur4 {
         width: 100%;
         height: 156px;
     }
-    
-    .conteneur6
-    {
+
+    .conteneur6 {
         width: 100%;
         height: 130px;
     }
-    
+
     #ligne_1,
-    #ligne_2
-    {
+    #ligne_2 {
         margin-bottom: 10px;
     }
-    
+
 
 
 }
